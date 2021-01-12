@@ -43,7 +43,7 @@ lyricForm.addEventListener('submit', async(e)=>{
         const r = await fetch("https://genius.p.rapidapi.com/search?q="+artist.value+" "+song.value, {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "a97a4e950bmsh6672a5ffdf5b02ep1f8e0ajsnb55dc0a39798",
+                "x-rapidapi-key": "",  //get the api key from the rapidapi site
                 "x-rapidapi-host": "genius.p.rapidapi.com"
             }
         })
@@ -54,7 +54,7 @@ lyricForm.addEventListener('submit', async(e)=>{
         const result = await fetch("https://genius.p.rapidapi.com/songs/"+id, {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "a97a4e950bmsh6672a5ffdf5b02ep1f8e0ajsnb55dc0a39798",
+                "x-rapidapi-key": "", //get the api key from the rapidapi site
                 "x-rapidapi-host": "genius.p.rapidapi.com"
             }
         })
