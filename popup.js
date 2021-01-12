@@ -23,7 +23,7 @@ lyricForm.addEventListener('submit', async(e)=>{
     const response = await fetch("https://shazam.p.rapidapi.com/search?term="+artist.value+" "+song.value+"&locale=en-US&offset=0&limit=5", {
         "method": "GET",
         "headers": {
-            "x-rapidapi-key": "a97a4e950bmsh6672a5ffdf5b02ep1f8e0ajsnb55dc0a39798",
+            "x-rapidapi-key": " ",  //get the api key from the rapidapi site
             "x-rapidapi-host": "shazam.p.rapidapi.com"
         }
     })
@@ -33,7 +33,7 @@ lyricForm.addEventListener('submit', async(e)=>{
     const songR = await fetch("https://shazam.p.rapidapi.com/songs/get-details?key="+_id+"&locale=en-US", {
         "method": "GET",
         "headers": {
-            "x-rapidapi-key": "a97a4e950bmsh6672a5ffdf5b02ep1f8e0ajsnb55dc0a39798",
+            "x-rapidapi-key": "",  //get the api key from the rapidapi site
             "x-rapidapi-host": "shazam.p.rapidapi.com"
         }
     })
